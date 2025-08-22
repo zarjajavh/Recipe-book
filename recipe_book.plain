@@ -1,0 +1,37 @@
+{% include "python-console-app-template.plain", main_executable_file_name: "recipe_book.py" %}
+
+# "Recipe book generator" in plain
+
+***Definitions:***
+- The MealCategory is one of: "breakfast", "lunch", "dinner".
+- The DifficultyLevel is one of: "easy", "medium", "difficult".
+- The Recipe is a dictionary with keys: name, ingredients, instructions, DifficultyLevel, MealCategory.
+- The RecipeCollection is a list of Recipes.
+
+## "Generating a set of recipes" in plain
+
+***Functional Requirements:***
+
+- Create a function that returns RecipeCollection of 10 Recipes with MealCategory: "breakfast".
+- Create a function that returns RecipeCollection of 10 Recipes with MealCategory: "lunch". 
+- Create a function that returns RecipeCollection of 10 Recipes with MealCategory: "dinner".
+
+    ***Acceptance Tests:***
+    - The App should generate exactly 10 recipes for each category.
+
+## "User choosing meal category" 
+
+***Functional Requirements:***
+
+- The App should display a welcome message to a user.
+- The App should ask a user to choose one MealCategory. It should then display the RecipeCollection that matches user's input MealCategory.
+
+## "User choosing one Recipe"
+
+***Functional Requirements:***
+- The App should ask a user for preffered ingredient and then display the reduced RecipeCollection, including only Recipes containing that ingredient.
+- The App should ask user to choose one of the meals on the displayed list and then display The Recipe for the chosen meal.
+
+
+
+
